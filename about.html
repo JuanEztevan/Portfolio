@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Juan Esteban</title>
+
+  <!-- ===== FUENTES ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fuente principal -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Fuente del logo -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Playfair+Display:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Fuente del efecto de máquina de escribir -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <a href="index.html" class="logo">
+      J<span class="u">u</span>anE<span class="z">z</span>teban
+    </a>
+
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><span class="nav-num">01.</span><a href="index.html#projects">Projects</a></li>
+        <li><span class="nav-num">02.</span><a href="about.html">About</a></li>
+        <li><span class="nav-num">03.</span><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- checkbox oculto para controlar overlay -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- icono hamburguesa -->
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+    </label>
+
+    <!-- overlay menú móvil -->
+    <div id="mobile-menu">
+      <!-- equis cerrar overlay -->
+      <label for="menu-toggle" class="close-menu">&times;</label>
+
+      <ul>
+        <li><span class="nav-num">01.</span><a href="index.html#projects">Projects</a></li>
+        <li><span class="nav-num">02.</span><a href="about.html">About</a></li>
+        <li><span class="nav-num">03.</span><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" role="region" aria-label="About Me">
+    <div class="about-container">
+
+      <div class="divider"></div>
+      <h2>About Me</h2>
+      <div class="divider"></div>
+
+      <!-- Bloque principal (2 columnas) -->
+      <div class="about-main">
+        <div class="about-image">
+          <img src="images/me.png" alt="Portrait of Juan Esteban Carmona Rodríguez">
+        </div>
+
+        <div class="about-text">
+          <p>
+            I’m Juan Esteban Carmona Rodríguez, a Systems Engineering student at Universidad Tecnológica del
+            Perú. I’m interested in how technology can make information easier to understand and experiences
+            more inclusive. I enjoy working with data and creating designs that are clear and easy to use.
+          </p>
+          <p>
+            I have experience in data visualization using Power BI and Excel, and in digital design with Figma,
+            Canva, and Adobe Illustrator. I believe technology can help people connect, learn, and make the world
+            a more accessible place for everyone.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- ===== PERSONAL DETAILS & INTERESTS ===== -->
+      <div class="about-extra">
+
+        <div class="details">
+          <h3 class="subsection-title">Personal Details</h3>
+
+          <ul class="details-list">
+            <li><span class="label">Age:</span> 21 years old</li>
+            <li><span class="label">Birth-date:</span> 01-30-2004</li>
+            <li><span class="label">Phone:</span> (51) 954 456 247</li>
+            <li><span class="label">Email:</span> jcarmonarz@gmail.com</li>
+            <li><span class="label">Location:</span> Ica, Perú</li>
+          </ul>
+        </div>
+
+        <div class="interests">
+          <h3 class="subsection-title">Interests</h3>
+
+          <div class="interest-tags">
+            <span class="tag"><i class="fa-solid fa-music"></i> Music</span>
+            <span class="tag"><i class="fa-solid fa-gamepad"></i> Gaming</span>
+            <span class="tag"><i class="fa-solid fa-book-open"></i> Reading</span>
+            <span class="tag"><i class="fa-solid fa-pen-nib"></i> Design</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ===== SKILLS SECTION ===== -->
+      <h3 class="subsection-title">Skills</h3>
+      <div class="skills-container">
+        <div class="skill-block">
+          <h3>UI/UX <span class="accent">&</span> Graphic Design</h3>
+          <p>
+            I create user-centered interfaces that balance functionality with aesthetic clarity. My focus is on
+            accessibility, simplicity, and meaningful interaction — crafting experiences that feel intuitive and
+            inclusive. I also enjoy blending data and design principles to communicate ideas visually and effectively.
+          </p>
+          <p class="tools">
+            <strong>Tools I use:</strong>
+            <span class="tool-list">Figma | Canva | Adobe Illustrator</span>
+          </p>
+
+        </div>
+
+        <div class="skill-block">
+          <h3>Data <span class="accent">Analysis</span></h3>
+          <p>
+            I’m developing experience in transforming data into meaningful insights through visualization and
+            interpretation. My learning focuses on exploring patterns, organizing information, and presenting it clearly
+            to support decision-making.
+          </p>
+          <p class="tools">
+            <strong>Tools I use:</strong>
+            <span class="tool-list">Power BI | Excel | SQL</span>
+          </p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <section id="contact">
+    <div class="contact-container">
+      <div class="divider"></div>
+      <h2>Contact</h2>
+      <div class="divider"></div>
+
+      <p>If you’re looking to create data-driven dashboards or intuitive web and mobile designs, I’d be happy to hear
+        about your project.</p>
+
+      <ul class="contact-links">
+        <li><a href="mailto:jcarmonarz@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/carmonar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li><a href="https://github.com/JuanEztevan" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+
+      <p class="credit">Made with 🧡 by Juan Esteban Carmona</p>
+    </div>
+  </section>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor-dot"></div>
+
+  <script>
+    const cursorDot = document.querySelector(".cursor-dot");
+    window.addEventListener("mousemove", e => {
+      cursorDot.style.top = `${e.clientY}px`;
+      cursorDot.style.left = `${e.clientX}px`;
+    });
+    const hoverTargets = document.querySelectorAll("a, button, img, p, h1, h2, h3, h4, h5, h6, span");
+    hoverTargets.forEach(el => {
+      el.addEventListener("mouseenter", () => cursorDot.classList.add("active"));
+      el.addEventListener("mouseleave", () => cursorDot.classList.remove("active"));
+    });
+  </script>
+
+
+  <script>
+    // seleccionar todos los enlaces del overlay
+    const mobileLinks = document.querySelectorAll('#mobile-menu a');
+    const menuToggle = document.getElementById('menu-toggle');
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // desmarcar el checkbox para cerrar el overlay
+        menuToggle.checked = false;
+      });
+    });
+  </script>
+
+</body>
+
+</html>

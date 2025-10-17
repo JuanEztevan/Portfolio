@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Juan Esteban — Portfolio</title>
+
+  <!-- ===== FUENTES ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fuente principal del sitio (texto general) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Fuente para el logo (Playfair Display o alternativa) -->
+  <!-- Opción 1: Playfair Display (más clásica, con cursiva elegante) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Playfair+Display:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Opción 2: Cormorant Garamond (más moderna, parecida a Black Mango) -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Cormorant+Garamond:ital,wght@600&display=swap" rel="stylesheet"> -->
+
+  <!-- Fuente del efecto de máquina de escribir -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <a href="index.html" class="logo">
+      J<span class="u">u</span>anE<span class="z">z</span>teban
+    </a>
+
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><span class="nav-num">01.</span><a href="#projects">Projects</a></li>
+        <li><span class="nav-num">02.</span><a href="about.html">About</a></li>
+        <li><span class="nav-num">03.</span><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- checkbox oculto para controlar overlay -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- icono hamburguesa -->
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+    </label>
+
+    <!-- overlay menú móvil -->
+    <div id="mobile-menu">
+      <!-- equis cerrar overlay -->
+      <label for="menu-toggle" class="close-menu">&times;</label>
+
+      <ul>
+        <li><span class="nav-num">01.</span><a href="#projects">Projects</a></li>
+        <li><span class="nav-num">02.</span><a href="about.html">About</a></li>
+        <li><span class="nav-num">03.</span><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- HERO / INTRO -->
+  <section id="intro" role="region" aria-label="Intro">
+    <!-- fondo Vanta -->
+    <div id="vanta-bg" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- 🦕 Emoji -->
+      <div class="dino">🦕</div>
+
+      <!-- texto de máquina de escribir -->
+      <h1 class="typewriter">Hi, I'm <span class="highlight">Juan Esteban</span></h1>
+
+      <!-- párrafo original -->
+      <p class="hero-text">
+        I craft intuitive digital experiences through <span class="highlight">data and design.</span>
+      </p>
+
+      <!-- scroll icon -->
+      <a class="scroll-down" href="#projects" aria-label="Go to projects">
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Scripts 
+  <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.dots.min.js"></script>
+  <script>
+    // Inicializa Vanta sobre el div #vanta-bg
+    if (typeof VANTA !== 'undefined') {
+      VANTA.DOTS({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x000000,
+        color: 0xffffff,
+        color2: 0xffffff,
+        size: 2.0,
+        spacing: 28.0,
+        showLines: false,
+        speed: 0.9,
+        opacity: 0.35
+      })
+    }
+  </script>
+-->
+
+  <!-- ======= PROJECTS ======= -->
+  <section id="projects" role="region" aria-label="Projects">
+    <div class="projects-container">
+      <div class="divider"></div>
+      <h2>Projects</h2>
+      <div class="divider"></div>
+
+      <!-- 🟠 READON -->
+      <div class="project">
+        <div class="project-image">
+          <img src="images/readon-digital-reading-app.png" alt="Readon — Digital Reading App">
+        </div>
+        <div class="project-text">
+          <h3>Readon <span class="dash">—</span> Digital Reading App</h3>
+          <div class="tags-line">
+            <span>UI/UX Design</span>
+            <span>Figma Prototype</span>
+            <span>Reading Experience</span>
+          </div>
+          <p>
+            A Figma prototype of a reading platform where users can explore free public-domain books, upload their own
+            EPUBs,
+            adjust text size and background colors, and enjoy audiobooks — designed to create an intuitive, flexible
+            reading experience for all.
+          </p>
+          <a href="https://www.google.com" target="_blank" class="btn-preview">
+            Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 🟠 BEES LITE -->
+      <div class="project reverse">
+        <div class="project-image">
+          <img src="images/bees-lite-smart-assistant.gif" alt="BEES Lite — Smart Beverage Assistant">
+        </div>
+        <div class="project-text">
+          <h3>BEES Lite <span class="dash">—</span> Smart Beverage Assistant</h3>
+          <div class="tags-line">
+            <span>UI/UX Visual Proposal</span>
+            <span>Accessibility</span>
+            <span>Smart Assistance</span>
+          </div>
+          <p>
+            Concept for a lighter version of the BEES app
+            (Backus).
+            Simplifies navigation for shop owners with limited connectivity and introduces “BEESito”, an AI assistant to
+            guide users
+            through key tasks and improve usability.
+          </p>
+          <a href="https://www.google.com" target="_blank" class="btn-preview">
+            Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 🟠 SERVIPERÚ -->
+      <div class="project">
+        <div class="project-image">
+          <img src="images/serviperu-logistics-system.png" alt="ServiPerú — Logistics Management System">
+        </div>
+        <div class="project-text">
+          <h3>ServiPerú <span class="dash">—</span> Logistics Management System</h3>
+          <div class="tags-line">
+            <span>UI Prototype</span>
+            <span>System Architecture</span>
+            <span>Logistics Management</span>
+          </div>
+          <p>
+            Centralized information system prototype for SERVIPERU S.R.L.,
+            designed to streamline logistics, inventory, and employee management while providing dashboards for better
+            operational control.
+          </p>
+          <a href="https://www.google.com" target="_blank" class="btn-preview">
+            GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 🟠 SALES MARKEING -->
+      <div class="project reverse">
+        <div class="project-image">
+          <img src="images/sales-marketing-dashboard.png" alt="HR Insights — Employee Data Dashboard">
+        </div>
+        <div class="project-text">
+          <h3>Sales & Marketing <span class="dash">—</span> Global Performance</h3>
+          <div class="tags-line">
+            <span>Data Analytics</span>
+            <span>Interactive Dashboard</span>
+            <span>Power BI</span>
+          </div>
+          <p>
+            Comprehensive analytics dashboard for a global tech company, designed to monitor sales revenue,
+            profit growth, marketing campaigns, and customer sessions from 2022 to 2024. Built with advanced data
+            modeling and DAX measures, it integrates maps, KPIs, and interactive filters to visualize performance by
+            country,
+            region, and channel.
+          </p>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYWM5YmI5MDctMGE3Ni00OGM2LWFkZDQtZjg0Y2MwNDYwOTc2IiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+            target="_blank" class="btn-preview">
+            Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 🟠 HR INSIGHTS -->
+      <div class="project">
+        <div class="project-image">
+          <img src="images/hr-insights-dashboard.png" alt="HR Insights — Employee Data Dashboard">
+        </div>
+        <div class="project-text">
+          <h3>HR Insights <span class="dash">—</span> Employee Data Dashboard</h3>
+          <div class="tags-line">
+            <span>Data Analytics</span>
+            <span>Interactive Dashboard</span>
+            <span>Power BI</span>
+          </div>
+          <p>
+            Interactive dashboard analyzing employee distribution, salaries, and performance evaluations by gender,
+            department, and position.
+            Includes navigation between pages, visual summaries, and filters for a clear view of workforce trends.
+          </p>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1ODIxZmQtMTdmMS00NTM5LTk3YzAtZTEzNGYxMGM2OWU3IiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+            target="_blank" class="btn-preview">
+            Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 🟠 GLOBAL POPULATION & HEALTH -->
+      <div class="project reverse">
+        <div class="project-image">
+          <img src="images/global-population-health.png" alt="Global Population & Health Visualization">
+        </div>
+        <div class="project-text">
+          <h3>Global Population & Health <span class="dash">—</span> Visualization</h3>
+          <div class="tags-line">
+            <span>Data Visualization</span>
+            <span>Global Indicators</span>
+            <span>Power BI</span>
+          </div>
+          <p>
+            Dynamic data visualization that compares world population, life expectancy, and child mortality through
+            interactive maps,
+            charts, and filters to uncover global patterns and inequalities.
+          </p>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZWFhMzE5NTQtZmI5NS00YTlmLWFkM2QtODY0YjQwOWNjOGQyIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9"
+            target="_blank" class="btn-preview">
+            Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- sigue igual para los demás proyectos -->
+    </div>
+  </section>
+
+  <div class="cursor-dot"></div>
+
+
+
+  <script>
+    // seleccionar todos los enlaces del overlay
+    const mobileLinks = document.querySelectorAll('#mobile-menu a');
+    const menuToggle = document.getElementById('menu-toggle');
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // desmarcar el checkbox para cerrar el overlay
+        menuToggle.checked = false;
+      });
+    });
+  </script>
+
+
+  <script>
+    const cursorDot = document.querySelector(".cursor-dot");
+
+    window.addEventListener("mousemove", e => {
+      cursorDot.style.top = `${e.clientY}px`;
+      cursorDot.style.left = `${e.clientX}px`;
+    });
+
+    // Detecta elementos interactivos (texto, imágenes, links, botones, etc.)
+    const hoverTargets = document.querySelectorAll("a, button, img, p, h1, h2, h3, h4, h5, h6, span");
+
+    hoverTargets.forEach(el => {
+      el.addEventListener("mouseenter", () => {
+        cursorDot.classList.add("active");
+      });
+      el.addEventListener("mouseleave", () => {
+        cursorDot.classList.remove("active");
+      });
+    });
+  </script>
+
+
+  <!-- ================== CONTACT / FOOTER ================== -->
+  <section id="contact">
+    <div class="contact-container">
+      <div class="divider"></div>
+      <h2>Contact</h2>
+      <div class="divider"></div>
+
+      <p>If you’re looking to create data-driven dashboards or intuitive web and mobile designs, I’d be happy to hear
+        about your project.</p>
+
+      <ul class="contact-links">
+        <li><a href="mailto:jcarmonarz@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> </a></li>
+        <li><a href="https://www.linkedin.com/in/carmonar/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+          </a></li>
+        <li><a href="https://github.com/JuanEztevan" target="_blank"><i class="fa-brands fa-github"></i> </a></li>
+      </ul>
+
+      <p class="credit">Made with 🧡 by Juan Esteban Carmona</p>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
